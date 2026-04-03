@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wrench Space Analysis and Passive Fault Tolerance for a Biaxial-Tilt Hexacopter Under Abrupt Total Rotor Failures</title>
+  <meta name="description" content="Anonymous supplementary materials for double-anonymous review." />
+  <meta name="robots" content="noindex,nofollow,noarchive" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero page-shell">
+    <h1>Wrench Space Analysis and Passive Fault Tolerance for a Biaxial-Tilt Hexacopter Under Abrupt Total Rotor Failures</h1>
+  </header>
+
+  <main class="page-shell">
+    <section class="panel narrow-panel">
+      <h2>Abstract</h2>
+      <p class="lead-text abstract-text">
+        Conventional multirotors suffer from a rapid collapse of attainable wrench space (AWS) under abrupt total rotor failures, rendering full 6-DOF recovery physically impossible.
+        This paper addresses passive fault-tolerant flight of a biaxial-tilt overactuated hexacopter (BTO) under unknown, instantaneous complete rotor failures.
+        First, we extend the inscribed-sphere metric of the AWS by incorporating the transient-wrench-jump term, enabling quantitative feasibility assessment under up to three simultaneous rotor failures and benchmarking against uniaxial-tilt and coplanar hexacopters.
+        Second, we develop two computationally efficient passive schemes without relying on fault detection or online optimization.
+        One scheme operates at the controller layer by combining a high-order fully actuated (HOFA) controller with a linear extended state observer (LESO) for lumped-disturbance rejection.
+        The other scheme operates at the allocator layer by using model-reference adaptive control allocation with momentum-based wrench estimation to compensate for control-allocation biases.
+        Simulations and flight experiments validate stable hovering and 6-DOF trajectory tracking under single and multiple rotor failures.
+        Further systematic comparisons confirm that the BTO provides larger recovery margins than uniaxial-tilt and coplanar designs.
+        Additional onboard-sensor-only experiments, including indoor tracking under wind disturbance, outdoor tracking under extreme conditions, narrow-frame traversal, and contact-based aerial writing, further validate the robustness of the proposed framework in complex operational environments.
+      </p>
+    </section>
+
+    <section class="panel figure-panel">
+      <h2>Overview Figure</h2>
+      <img
+        class="overview-image"
+        src="assets/posters/overview.jpg"
+        alt="Overview figure"
+      />
+      <p class="caption-text">
+        Replace this image with your teaser figure, system overview, or experiment montage.
+      </p>
+    </section>
+
+    <section class="panel narrow-panel">
+      <h2>Summary</h2>
+      <p class="lead-text">
+        Biaxial-tilt vector thrust preserves full-actuation control and task capability under sudden complete rotor failures.
+      </p>
+    </section>
+
+    <section class="panel video-stack-panel">
+      <h2>Main Video</h2>
+      <p class="section-note">The primary demonstration is split into three files: one 1080P overview on top and two 720P clips shown side by side below.</p>
+      <div class="stacked-videos">
+        <article class="wide-video-card">
+          <h3>Main Video - Overview (1080P)</h3>
+          <video id="main-video-overview" controls preload="metadata" playsinline poster="assets/posters/default-video-poster.svg">
+            <source src="assets/videos/main/main_overview_1080p.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p class="caption-text">
+            Replace with a one-sentence description of the full 1080P overview video.
+          </p>
+        </article>
+
+        <div class="main-video-row">
+          <article class="video-card standard-card">
+            <h3>Main Video - Part I (720P)</h3>
+            <video id="main-video-part-1" controls preload="metadata" playsinline poster="assets/posters/default-video-poster.svg">
+              <source src="assets/videos/main/main_part_1_720p.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p class="caption-text">
+              Replace with a one-sentence description of the first 720P continuation clip.
+            </p>
+          </article>
+
+          <article class="video-card standard-card">
+            <h3>Main Video - Part II (720P)</h3>
+            <video id="main-video-part-2" controls preload="metadata" playsinline poster="assets/posters/default-video-poster.svg">
+              <source src="assets/videos/main/main_part_2_720p.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <p class="caption-text">
+              Replace with a one-sentence description of the second 720P continuation clip.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel narrow-panel">
+      <h2>Experimental Overview</h2>
+      <p class="lead-text">
+        Replace this block with a short introduction to the experiment sections below. For example, you can explain the order
+        of the experiments, the evaluation dimensions, or the relationship between hovering, tracking, outdoor testing,
+        gate traversal, and writing.
+      </p>
+    </section>
+
+    <section class="panel hover-panel">
+      <h2>Hovering Experiments</h2>
+      <p class="section-note">Desktop layout is fixed to 4 rows x 9 columns. On narrow screens, the grid scrolls horizontally to preserve the 4 x 9 arrangement.</p>
+      <div class="hover-grid-scroll">
+        <div id="hover-grid" class="hover-grid"></div>
+      </div>
+    </section>
+
+    <section class="panel section-panel">
+      <h2>Trajectory Tracking</h2>
+      <p class="section-note">Use this section for the paired trajectory tracking video and image.</p>
+      <div id="trajectory-grid" class="outdoor-pair-list"></div>
+    </section>
+
+    <section class="panel section-panel">
+      <h2>Outdoor Trajectory Tracking</h2>
+      <p class="section-note">Use this section for the outdoor trajectory tracking video-image pairs.</p>
+      <div id="outdoor-grid" class="outdoor-pair-list"></div>
+    </section>
+
+    <section class="panel section-panel">
+      <h2>Gate Traversal</h2>
+      <p class="section-note">Use this section for the paired gate traversal video and image.</p>
+      <div id="gate-grid" class="outdoor-pair-list"></div>
+    </section>
+
+    <section class="panel section-panel">
+      <h2>Writing</h2>
+      <p class="section-note">Use this section for the writing demonstrations.</p>
+      <div id="writing-grid" class="writing-showcase"></div>
+    </section>
+  </main>
+
+  <footer class="footer page-shell">
+    <p>Anonymous supplementary website for review purposes only.</p>
+  </footer>
+
+  <script>
+    const DEFAULT_VIDEO_POSTER = 'assets/posters/default-video-poster.svg';
+    const hoverCaseOrder = ['1', '4', '5', '12', '34', '13', '16', '36', '136'];
+    const hoverGroups = [
+      { title: 'BTO-CL', folder: 'BTO-CL' },
+      { title: 'BTO-AL', folder: 'BTO-AL' },
+      { title: 'UTO-CL', folder: 'UTO-CL' },
+      { title: 'UTO-AL', folder: 'UTO-AL' }
+    ];
+    const hoverAngleConfigs = [
+      {
+        title: '0 deg',
+        folder: '0deg',
+        clipItems: [
+          { label: '1 / 4 / 5', clipId: '1' },
+          { label: '12 / 34', clipId: '12' },
+          { label: '13 / 16 / 36', clipId: '13' },
+          { label: '136', clipId: '136' }
+        ]
+      },
+      {
+        title: '45 deg',
+        folder: '45deg',
+        clipItems: hoverCaseOrder.map((clipId) => ({
+          label: clipId,
+          clipId
+        }))
+      }
+    ];
+    const hoverCaseImages = hoverCaseOrder.map((clipId) => ({
+      title: `Case ${clipId}`,
+      clipId,
+      src: `assets/images/hover/cases/${clipId}.jpg`
+    }));
+
+    const hoverAngleSections = hoverAngleConfigs.map(({ title: angleTitle, folder: angleFolder, clipItems }) => ({
+      title: `${angleTitle} Hovering`,
+      columns: clipItems.length,
+      minWidth: clipItems.length === 9 ? '1440px' : '720px',
+      videos: hoverGroups.flatMap(({ title, folder }) =>
+        clipItems.map(({ label, clipId }) => ({
+          title: `${title} ${label}`,
+          src: `assets/videos/hover/${angleFolder}/${folder}/${clipId}.mp4`,
+          desc: `${angleTitle} ${title} hovering clip ${label}.`
+        }))
+      )
+    }));
+    const hoverSectionNoteText = 'Case images are shown first in the order 1, 4, 5, 12, 34, 13, 16, 36, 136. The 45 deg sets keep the full 4 rows x 9 columns. The 0 deg sets show 4 representative clips per row because symmetric cases share the same video.';
+
+    const trajectoryPairs = [
+      {
+        title: 'Trajectory 01',
+        videoSrc: 'assets/videos/trajectory/trajectory_01.mp4',
+        imageSrc: 'assets/images/trajectory/trajectory_01.jpg',
+        poster: 'assets/posters/trajectory/trajectory_01.jpg',
+        desc: 'Replace with the trajectory tracking clip and its paired image.'
+      }
+    ];
+
+    const outdoorPairs = [
+      {
+        title: 'Outdoor 01',
+        videoSrc: 'assets/videos/outdoor/outdoor_01.mp4',
+        imageSrc: 'assets/images/outdoor/outdoor_01.jpg',
+        poster: 'assets/posters/outdoor/outdoor_01.jpg',
+        desc: 'Replace with the first outdoor tracking clip and its paired image.'
+      }
+    ];
+
+    const gatePairs = [
+      {
+        title: 'Gate 01',
+        videoSrc: 'assets/videos/gate/gate_01.mp4',
+        imageSrc: 'assets/images/gate/gate_01.jpg',
+        poster: 'assets/posters/gate/gate_01.jpg',
+        desc: 'Replace with the gate traversal clip and its paired image.'
+      }
+    ];
+
+    const writingShowcase = {
+      featuredVideo: {
+        title: 'Writing Video 01',
+        src: 'assets/videos/writing/writing_01.mp4',
+        desc: 'Replace with the featured writing demonstration clip.'
+      },
+      pairedImage: {
+        title: 'Writing Image',
+        src: 'assets/images/writing/writing_01.jpg',
+        alt: 'Writing paired image',
+        desc: 'Replace with the paired writing image shown next to the featured video.'
+      },
+      bottomVideos: [
+        {
+          title: 'Writing Video 02',
+          src: 'assets/videos/writing/writing_02.mp4',
+          desc: 'Replace with the second writing clip shown in the lower row.'
+        },
+        {
+          title: 'Writing Video 03',
+          src: 'assets/videos/writing/writing_03.mp4',
+          desc: 'Replace with the third writing clip shown in the lower row.'
+        }
+      ]
+    };
+
+    function getPosterCandidates(src, poster) {
+      const candidates = [];
+
+      if (poster) {
+        candidates.push(poster);
+      }
+
+      if (src && src.startsWith('assets/videos/')) {
+        const relativeBase = src
+          .replace('assets/videos/', '')
+          .replace(/\.[^.]+$/, '');
+
+        ['jpg', 'jpeg', 'png', 'webp'].forEach((ext) => {
+          candidates.push(`assets/posters/${relativeBase}.${ext}`);
+          candidates.push(`assets/images/${relativeBase}.${ext}`);
+        });
+      }
+
+      return [...new Set(candidates.filter(Boolean))];
+    }
+
+    function applyBestPoster(video, src, preferredPoster) {
+      if (!video) {
+        return;
+      }
+
+      const candidates = getPosterCandidates(src, preferredPoster);
+      video.poster = DEFAULT_VIDEO_POSTER;
+
+      function tryCandidate(index) {
+        if (index >= candidates.length) {
+          return;
+        }
+
+        const candidate = candidates[index];
+        const image = new Image();
+
+        image.onload = () => {
+          video.poster = candidate;
+        };
+
+        image.onerror = () => {
+          tryCandidate(index + 1);
+        };
+
+        image.src = candidate;
+      }
+
+      tryCandidate(0);
+    }
+
+    function createVideoCard({ title, src, desc, poster }, compact = false) {
+      const card = document.createElement('article');
+      card.className = `video-card ${compact ? 'compact-card' : 'standard-card'}`;
+
+      card.innerHTML = `
+        <h3>${title}</h3>
+        <video controls preload="none" playsinline poster="${DEFAULT_VIDEO_POSTER}">
+          <source src="${src}" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <p class="caption-text">${desc}</p>
+      `;
+
+      applyBestPoster(card.querySelector('video'), src, poster);
+
+      return card;
+    }
+
+    function renderGrid(targetId, videos, compact = false) {
+      const target = document.getElementById(targetId);
+      videos.forEach((video) => target.appendChild(createVideoCard(video, compact)));
+    }
+
+    function createHoverCaseCard({ title, clipId, src }) {
+      const card = document.createElement('article');
+      card.className = 'hover-case-card';
+
+      const label = document.createElement('h4');
+      label.className = 'hover-case-label';
+      label.textContent = title;
+
+      const frame = document.createElement('div');
+      frame.className = 'hover-case-frame';
+
+      const image = document.createElement('img');
+      image.className = 'hover-case-image';
+      image.src = src;
+      image.alt = `${title} reference image`;
+      image.loading = 'lazy';
+      image.addEventListener('error', () => {
+        frame.classList.add('missing-image');
+        image.remove();
+
+        const placeholder = document.createElement('div');
+        placeholder.className = 'hover-case-placeholder';
+        placeholder.textContent = `Add image: ${clipId}.jpg`;
+        frame.appendChild(placeholder);
+      });
+      frame.appendChild(image);
+
+      card.append(label, frame);
+      return card;
+    }
+
+    function renderHoverAngleSections(container, sections, caseImages) {
+      if (!container) {
+        return;
+      }
+
+      container.className = 'hover-angle-stack';
+      container.replaceChildren();
+
+      const caseBlock = document.createElement('article');
+      caseBlock.className = 'hover-angle-block';
+
+      const caseHeading = document.createElement('h3');
+      caseHeading.className = 'hover-angle-title';
+      caseHeading.textContent = 'Case Images';
+
+      const caseScroll = document.createElement('div');
+      caseScroll.className = 'hover-grid-scroll';
+
+      const caseGrid = document.createElement('div');
+      caseGrid.className = 'hover-case-grid';
+      caseImages.forEach((item) => caseGrid.appendChild(createHoverCaseCard(item)));
+
+      caseScroll.appendChild(caseGrid);
+      caseBlock.append(caseHeading, caseScroll);
+      container.appendChild(caseBlock);
+
+      sections.forEach((section) => {
+        const block = document.createElement('article');
+        block.className = 'hover-angle-block';
+
+        const heading = document.createElement('h3');
+        heading.className = 'hover-angle-title';
+        heading.textContent = section.title;
+
+        const scroll = document.createElement('div');
+        scroll.className = 'hover-grid-scroll';
+
+        const grid = document.createElement('div');
+        grid.className = 'hover-grid';
+        grid.style.setProperty('--hover-columns', section.columns || 9);
+        grid.style.setProperty('--hover-min-width', section.minWidth || '1440px');
+        section.videos.forEach((video) => grid.appendChild(createVideoCard(video, true)));
+
+        scroll.appendChild(grid);
+        block.append(heading, scroll);
+        container.appendChild(block);
+      });
+    }
+
+    function createMediaPairCard({ title, videoSrc, imageSrc, desc, poster = imageSrc }) {
+      const card = document.createElement('article');
+      card.className = 'outdoor-pair-card';
+
+      const heading = document.createElement('h3');
+      heading.textContent = title;
+
+      const mediaSplit = document.createElement('div');
+      mediaSplit.className = 'outdoor-media-split';
+
+      const videoItem = document.createElement('div');
+      videoItem.className = 'outdoor-media-item';
+      const video = document.createElement('video');
+      video.controls = true;
+      video.preload = 'none';
+      video.playsInline = true;
+      video.poster = DEFAULT_VIDEO_POSTER;
+      const source = document.createElement('source');
+      source.src = videoSrc;
+      source.type = 'video/mp4';
+      video.appendChild(source);
+      video.append('Your browser does not support the video tag.');
+      videoItem.appendChild(video);
+      applyBestPoster(video, videoSrc, poster);
+
+      const imageItem = document.createElement('div');
+      imageItem.className = 'outdoor-media-item';
+      const image = document.createElement('img');
+      image.className = 'outdoor-image';
+      image.src = imageSrc;
+      image.alt = `${title} paired image`;
+      image.loading = 'lazy';
+      image.addEventListener('error', () => {
+        imageItem.classList.add('missing-image');
+        image.remove();
+
+        const placeholder = document.createElement('div');
+        placeholder.className = 'missing-image-placeholder';
+        placeholder.textContent = `Add image: ${imageSrc}`;
+        imageItem.appendChild(placeholder);
+      });
+      imageItem.appendChild(image);
+
+      mediaSplit.append(videoItem, imageItem);
+
+      const caption = document.createElement('p');
+      caption.className = 'caption-text';
+      caption.textContent = desc;
+
+      card.append(heading, mediaSplit, caption);
+      return card;
+    }
+
+    function renderMediaPairs(targetId, pairs) {
+      const target = document.getElementById(targetId);
+      pairs.forEach((pair) => target.appendChild(createMediaPairCard(pair)));
+    }
+
+    function createWritingImageCard({ title, src, alt, desc }) {
+      const card = document.createElement('article');
+      card.className = 'video-card standard-card writing-image-card';
+
+      const heading = document.createElement('h3');
+      heading.textContent = title;
+
+      const frame = document.createElement('div');
+      frame.className = 'writing-image-frame';
+
+      const image = document.createElement('img');
+      image.className = 'writing-image';
+      image.src = src;
+      image.alt = alt || title;
+      image.loading = 'lazy';
+      image.addEventListener('error', () => {
+        frame.classList.add('missing-image');
+        image.remove();
+
+        const placeholder = document.createElement('div');
+        placeholder.className = 'missing-image-placeholder';
+        placeholder.textContent = `Add image: ${src}`;
+        frame.appendChild(placeholder);
+      });
+      frame.appendChild(image);
+
+      const caption = document.createElement('p');
+      caption.className = 'caption-text';
+      caption.textContent = desc;
+
+      card.append(heading, frame, caption);
+      return card;
+    }
+
+    function renderWritingShowcase(targetId, showcase) {
+      const target = document.getElementById(targetId);
+
+      const topRow = document.createElement('div');
+      topRow.className = 'writing-top-row';
+      topRow.appendChild(createVideoCard(showcase.featuredVideo, false));
+      topRow.appendChild(createWritingImageCard(showcase.pairedImage));
+
+      const bottomRow = document.createElement('div');
+      bottomRow.className = 'writing-bottom-row';
+      showcase.bottomVideos.forEach((video) => bottomRow.appendChild(createVideoCard(video, false)));
+
+      target.append(topRow, bottomRow);
+    }
+
+    const hoverSectionNote = document.querySelector('.hover-panel .section-note');
+    if (hoverSectionNote) {
+      hoverSectionNote.textContent = hoverSectionNoteText;
+    }
+
+    renderHoverAngleSections(document.querySelector('.hover-panel .hover-grid-scroll'), hoverAngleSections, hoverCaseImages);
+    renderMediaPairs('trajectory-grid', trajectoryPairs);
+    renderMediaPairs('outdoor-grid', outdoorPairs);
+    renderMediaPairs('gate-grid', gatePairs);
+    renderWritingShowcase('writing-grid', writingShowcase);
+    applyBestPoster(document.getElementById('main-video-overview'), 'assets/videos/main/main_overview_1080p.mp4');
+    applyBestPoster(document.getElementById('main-video-part-1'), 'assets/videos/main/main_part_1_720p.mp4');
+    applyBestPoster(document.getElementById('main-video-part-2'), 'assets/videos/main/main_part_2_720p.mp4');
+  </script>
+</body>
+</html>
