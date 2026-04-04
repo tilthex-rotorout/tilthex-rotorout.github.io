@@ -178,6 +178,7 @@
         clipItems.map(({ label, clipId }) => ({
           title: `${title} ${label}`,
           src: `assets/videos/hover/${angleFolder}/${folder}/${clipId}.mp4`,
+          poster: `assets/posters/hover/${angleFolder}/${folder}/${clipId}.jpg`,
           desc: `${angleTitle} ${title} hovering clip ${label}.`
         }))
       )
@@ -389,7 +390,7 @@
         grid.className = 'hover-grid';
         grid.style.setProperty('--hover-columns', section.columns || 9);
         grid.style.setProperty('--hover-min-width', section.minWidth || '1440px');
-        section.videos.forEach((video) => grid.appendChild(createVideoCard(video, true, false)));
+        section.videos.forEach((video) => grid.appendChild(createVideoCard(video, true)));
 
         scroll.appendChild(grid);
         block.append(heading, scroll);
