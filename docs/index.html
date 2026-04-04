@@ -100,11 +100,9 @@
 
     <section class="panel hover-panel">
       <h2>Hovering Experiments</h2>
-      <p class="section-note">Desktop layout is fixed to 4 rows x 9 columns. On narrow screens, the grid scrolls horizontally to preserve the 4 x 9 arrangement.</p>
-      <div class="hover-grid-scroll">
-        <div id="hover-grid" class="hover-grid"></div>
-      </div>
-    </section> 
+      <p class="section-note">Hovering videos are grouped by failure case so each row can compare the four methods side by side.</p>
+      <div id="hover-grid" class="hover-angle-stack"></div>
+    </section>
 
     <section class="panel section-panel">
       <h2>Trajectory Tracking</h2>
@@ -172,18 +170,17 @@
 
     const hoverAngleSections = hoverAngleConfigs.map(({ title: angleTitle, folder: angleFolder, clipItems }) => ({
       title: `${angleTitle} Hovering`,
-      columns: clipItems.length,
-      minWidth: clipItems.length === 9 ? '1440px' : '720px',
-      videos: hoverGroups.flatMap(({ title, folder }) =>
-        clipItems.map(({ label, clipId }) => ({
-          title: `${title} ${label}`,
+      rows: clipItems.map(({ label, clipId }) => ({
+        title: `Failure case ${label}`,
+        methods: hoverGroups.map(({ title, folder }) => ({
+          title,
           src: `assets/videos/hover/${angleFolder}/${folder}/${clipId}.mp4`,
           poster: `assets/posters/hover/${angleFolder}/${folder}/${clipId}.jpg`,
           desc: `${angleTitle} ${title} hovering clip ${label}.`
         }))
-      )
+      }))
     }));
-    const hoverSectionNoteText = 'Case images are shown first in the order 1, 4, 5, 12, 34, 13, 16, 36, 136. The 45 deg sets keep the full 4 rows x 9 columns. The 0 deg sets show 4 representative clips per row because symmetric cases share the same video.';
+    const hoverSectionNoteText = 'Hovering videos are arranged by failure case so each row compares BTO-CL, BTO-AL, UTO-CL, and UTO-AL side by side. Case images remain in the order 1, 4, 5, 12, 34, 13, 16, 36, 136. The 0 deg set keeps 4 representative rows because symmetric failure cases share the same clip.';
 
     const trajectoryPairs = [
       {
@@ -349,12 +346,32 @@
       return card;
     }
 
+    function createHoverComparisonRow({ title, methods }) {
+      const row = document.createElement('div');
+      row.className = 'hover-comparison-row';
+
+      const heading = document.createElement('h4');
+      heading.className = 'hover-row-title';
+      heading.textContent = title;
+
+      const grid = document.createElement('div');
+      grid.className = 'hover-method-grid';
+
+      methods.forEach((video) => {
+        const card = createVideoCard(video, true);
+        card.classList.add('hover-method-card');
+        grid.appendChild(card);
+      });
+
+      row.append(heading, grid);
+      return row;
+    }
+
     function renderHoverAngleSections(container, sections, caseImages) {
       if (!container) {
         return;
       }
 
-      container.className = 'hover-angle-stack';
       container.replaceChildren();
 
       const caseBlock = document.createElement('article');
@@ -383,17 +400,28 @@
         heading.className = 'hover-angle-title';
         heading.textContent = section.title;
 
-        const scroll = document.createElement('div');
-        scroll.className = 'hover-grid-scroll';
+        const legend = document.createElement('div');
+        legend.className = 'hover-method-legend';
+        hoverGroups.forEach(({ title }) => {
+          const label = document.createElement('div');
+          label.className = 'hover-method-label';
+          label.textContent = title;
+          legend.appendChild(label);
+        });
 
-        const grid = document.createElement('div');
-        grid.className = 'hover-grid';
-        grid.style.setProperty('--hover-columns', section.columns || 9);
-        grid.style.setProperty('--hover-min-width', section.minWidth || '1440px');
-        section.videos.forEach((video) => grid.appendChild(createVideoCard(video, true)));
+        const rowStack = document.createElement('div');
+        rowStack.className = 'hover-comparison-stack';
+        section.rows.forEach((row) => rowStack.appendChild(createHoverComparisonRow(row)));
 
-        scroll.appendChild(grid);
-        block.append(heading, scroll);
+        const comparisonScroll = document.createElement('div');
+        comparisonScroll.className = 'hover-grid-scroll';
+
+        const comparisonTable = document.createElement('div');
+        comparisonTable.className = 'hover-comparison-table';
+        comparisonTable.append(legend, rowStack);
+
+        comparisonScroll.appendChild(comparisonTable);
+        block.append(heading, comparisonScroll);
         container.appendChild(block);
       });
     }
@@ -510,7 +538,7 @@
       hoverSectionNote.textContent = hoverSectionNoteText;
     }
 
-    renderHoverAngleSections(document.querySelector('.hover-panel .hover-grid-scroll'), hoverAngleSections, hoverCaseImages);
+    renderHoverAngleSections(document.getElementById('hover-grid'), hoverAngleSections, hoverCaseImages);
     renderMediaPairs('trajectory-grid', trajectoryPairs);
     renderMediaPairs('outdoor-grid', outdoorPairs);
     renderMediaPairs('gate-grid', gatePairs);
