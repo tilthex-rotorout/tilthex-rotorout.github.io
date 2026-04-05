@@ -398,21 +398,6 @@
         heading.className = 'hover-angle-title';
         heading.textContent = section.title;
 
-        const legend = document.createElement('div');
-        legend.className = 'hover-comparison-legend';
-
-        const caseLabel = document.createElement('div');
-        caseLabel.className = 'hover-method-label hover-case-column-label';
-        caseLabel.textContent = 'Failure Rotor';
-        legend.appendChild(caseLabel);
-
-        hoverGroups.forEach(({ title }) => {
-          const label = document.createElement('div');
-          label.className = 'hover-method-label';
-          label.textContent = title;
-          legend.appendChild(label);
-        });
-
         const rowStack = document.createElement('div');
         rowStack.className = 'hover-comparison-stack';
         section.rows.forEach((row) => rowStack.appendChild(createHoverComparisonRow(row)));
@@ -422,7 +407,7 @@
 
         const comparisonTable = document.createElement('div');
         comparisonTable.className = 'hover-comparison-table';
-        comparisonTable.append(legend, rowStack);
+        comparisonTable.appendChild(rowStack);
 
         comparisonScroll.appendChild(comparisonTable);
         block.append(heading, comparisonScroll);
