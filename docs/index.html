@@ -18,14 +18,15 @@
       <h2>Abstract</h2>
       <p class="lead-text abstract-text">
         Conventional multirotors suffer from a rapid collapse of attainable wrench space (AWS) under abrupt total rotor failures, rendering full 6-DOF recovery physically impossible.
-        This paper addresses passive fault-tolerant flight of a biaxial-tilt overactuated hexacopter (BTO) under unknown, instantaneous complete rotor failures.
-        First, we extend the inscribed-sphere metric of the AWS by incorporating the transient-wrench-jump term, enabling quantitative feasibility assessment under up to three simultaneous rotor failures and benchmarking against uniaxial-tilt and coplanar hexacopters.
-        Second, we develop two computationally efficient passive schemes without relying on fault detection or online optimization.
-        One scheme operates at the controller layer by combining a high-order fully actuated (HOFA) controller with a linear extended state observer (LESO) for lumped-disturbance rejection.
-        The other scheme operates at the allocator layer by using model-reference adaptive control allocation with momentum-based wrench estimation to compensate for control-allocation biases.
-        Simulations and flight experiments validate stable hovering and 6-DOF trajectory tracking under single and multiple rotor failures.
-        Further systematic comparisons confirm that the BTO provides larger recovery margins than uniaxial-tilt and coplanar designs.
-        Additional onboard-sensor-only experiments, including indoor tracking under wind disturbance, outdoor tracking under extreme conditions, narrow-frame traversal, and contact-based aerial writing, further validate the robustness of the proposed framework in complex operational environments.
+This paper addresses passive fault-tolerant flight of a biaxial-tilt overactuated hexacopter (BTO) under abrupt total rotor failures that are a priori unknown to the controller.
+The control design and analysis focus on representative abrupt rotor-failure cases for which the post-failure system remains fully actuated, while no explicit fault detection, isolation, or fault-mode switching is assumed.
+First, we extend the inscribed-sphere metric of the AWS by incorporating the transient-wrench-jump term, enabling quantitative feasibility assessment under up to three simultaneous rotor failures and benchmarking against uniaxial-tilt and coplanar hexacopters.
+Second, we develop two computationally efficient passive schemes without relying on fault detection or online optimization.
+One scheme operates at the controller layer by combining a high-order fully actuated (HOFA) controller with a linear extended state observer (LESO) for lumped-disturbance rejection.
+The other scheme operates at the allocator layer by using model-reference adaptive control allocation with momentum-based wrench estimation to compensate for control-allocation biases.
+Simulations and flight experiments validate stable hovering and 6-DOF trajectory tracking under single and multiple rotor failures.
+Further systematic comparisons confirm that the BTO provides larger recovery margins than uniaxial-tilt and coplanar designs.
+Additional onboard-sensor-only experiments, including indoor tracking under wind disturbance, outdoor tracking under extreme conditions, narrow-frame traversal, and contact-based aerial writing, further validate the robustness of the proposed framework in complex operational environments.
       </p>
     </section>
 
