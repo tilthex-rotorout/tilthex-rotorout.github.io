@@ -178,8 +178,7 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 
 The hovering comparisons are condensed into expandable tables so the repository homepage stays readable while still exposing all experiment entries.
 
-<details>
-  <summary><strong>0 deg hovering comparison</strong></summary>
+### 0 deg hovering comparison
 
 Representative case images are reused for symmetric failure sets that share the same clip.
 
@@ -190,10 +189,7 @@ Representative case images are reused for symmetric failure sets that share the 
 | `13 / 16 / 36` | <img src="docs/assets/images/hover/cases/13.jpg" alt="Failure rotor 13, 16, or 36" width="120"> | [Failure](docs/assets/videos/hover/0deg/BTO-CL/13.mp4) | [Success](docs/assets/videos/hover/0deg/BTO-AL/13.mp4) | [Failure](docs/assets/videos/hover/0deg/UTO-CL/13.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-AL/13.mp4) |
 | `136` | <img src="docs/assets/images/hover/cases/136.jpg" alt="Failure rotor 136" width="120"> | [Failure](docs/assets/videos/hover/0deg/BTO-CL/136.mp4) | [Success](docs/assets/videos/hover/0deg/BTO-AL/136.mp4) | [Failure](docs/assets/videos/hover/0deg/UTO-CL/136.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-AL/136.mp4) |
 
-</details>
-
-<details>
-  <summary><strong>45 deg hovering comparison</strong></summary>
+### 45 deg hovering comparison
 
 | Failure case | Reference | BTO-CL | BTO-AL | UTO-CL | UTO-AL |
 | --- | --- | --- | --- | --- | --- |
@@ -206,8 +202,6 @@ Representative case images are reused for symmetric failure sets that share the 
 | `16` | <img src="docs/assets/images/hover/cases/16.jpg" alt="Failure rotor 16" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/16.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/16.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/16.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-AL/16.mp4) |
 | `36` | <img src="docs/assets/images/hover/cases/36.jpg" alt="Failure rotor 36" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/36.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/36.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/36.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-AL/36.mp4) |
 | `136` | <img src="docs/assets/images/hover/cases/136.jpg" alt="Failure rotor 136" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/136.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/136.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/136.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-AL/136.mp4) |
-
-</details>
 
 ## Notes
 
