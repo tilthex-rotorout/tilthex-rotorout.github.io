@@ -69,7 +69,7 @@ Each video slot below shows the corresponding poster image, with a direct MP4 li
 
 ## Experiment Highlights
 
-The sections below keep the most visual parts of the supplementary materials directly inside the README while staying compatible with static repository rendering.
+The sections below keep the most visual parts of the supplementary materials directly inside the README while staying compatible with static repository rendering. All experiments shown here are conducted using onboard sensors only, without external positioning devices or infrastructure, to evaluate robustness in realistic and challenging operating conditions.
 
 ### Indoor Trajectory Tracking
 
@@ -176,7 +176,7 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 
 ## Extended Hovering Results
 
-The hovering comparisons are condensed into expandable tables so the repository homepage stays readable while still exposing all experiment entries.
+The hovering comparisons are condensed into compact tables so the repository homepage stays readable while still exposing all experiment entries. These hovering trials are also conducted using onboard sensors only.
 
 ### 0 deg hovering comparison
 
