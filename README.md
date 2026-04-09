@@ -33,32 +33,32 @@ Conventional multirotors suffer from a rapid collapse of attainable wrench space
 
 ## Main Video
 
-Each poster below opens the corresponding MP4 clip stored in this repository.
+Each video slot below shows the corresponding poster image, with a direct MP4 link placed underneath.
 
 <table>
   <tr>
     <td align="center" valign="top" width="33.33%">
-      <a href="docs/assets/videos/main/main_overview_1080p.mp4">
-        <img src="docs/assets/posters/main/main_overview_1080p.jpg" alt="Main video overview" width="100%">
-      </a>
+      <img src="docs/assets/posters/main/main_overview_1080p.jpg" alt="Main video overview" width="100%">
+      <br>
+      <a href="docs/assets/videos/main/main_overview_1080p.mp4">Video Link</a>
       <br>
       <strong>Main Video - Overview</strong>
       <br>
       Problem setting, key challenges, and main technical contributions.
     </td>
     <td align="center" valign="top" width="33.33%">
-      <a href="docs/assets/videos/main/main_part_1_720p.mp4">
-        <img src="docs/assets/posters/main/main_part_1_720p.jpg" alt="Main video part I" width="100%">
-      </a>
+      <img src="docs/assets/posters/main/main_part_1_720p.jpg" alt="Main video part I" width="100%">
+      <br>
+      <a href="docs/assets/videos/main/main_part_1_720p.mp4">Video Link</a>
       <br>
       <strong>Main Video - Part I</strong>
       <br>
       Hovering and trajectory-tracking experiments under single and multiple rotor failures.
     </td>
     <td align="center" valign="top" width="33.33%">
-      <a href="docs/assets/videos/main/main_part_2_720p.mp4">
-        <img src="docs/assets/posters/main/main_part_2_720p.jpg" alt="Main video part II" width="100%">
-      </a>
+      <img src="docs/assets/posters/main/main_part_2_720p.jpg" alt="Main video part II" width="100%">
+      <br>
+      <a href="docs/assets/videos/main/main_part_2_720p.mp4">Video Link</a>
       <br>
       <strong>Main Video - Part II</strong>
       <br>
@@ -77,14 +77,14 @@ Indoor trajectory tracking under 5 m/s wind disturbance is used to evaluate post
 
 <table>
   <tr>
-    <td align="center" width="50%">
-      <a href="docs/assets/videos/trajectory/trajectory_01.mp4">
-        <img src="docs/assets/posters/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking video" width="100%">
-      </a>
+    <td align="center" valign="top" width="50%">
+      <img src="docs/assets/posters/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking video" width="100%">
+      <br>
+      <a href="docs/assets/videos/trajectory/trajectory_01.mp4">Video Link</a>
       <br>
       <strong>Experiment Video</strong>
     </td>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <img src="docs/assets/images/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking statistics" width="100%">
       <br>
       <strong>Tracking Error Statistics</strong>
@@ -98,14 +98,14 @@ Outdoor trajectory tracking is evaluated in low-temperature conditions with stoc
 
 <table>
   <tr>
-    <td align="center" width="50%">
-      <a href="docs/assets/videos/outdoor/outdoor_01.mp4">
-        <img src="docs/assets/posters/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking video" width="100%">
-      </a>
+    <td align="center" valign="top" width="50%">
+      <img src="docs/assets/posters/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking video" width="100%">
+      <br>
+      <a href="docs/assets/videos/outdoor/outdoor_01.mp4">Video Link</a>
       <br>
       <strong>Experiment Video</strong>
     </td>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <img src="docs/assets/images/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking statistics" width="100%">
       <br>
       <strong>Tracking Error Statistics</strong>
@@ -119,14 +119,14 @@ In the tilted narrow-frame traversal task, the vehicle passes through the apertu
 
 <table>
   <tr>
-    <td align="center" width="50%">
-      <a href="docs/assets/videos/gate/gate_01.mp4">
-        <img src="docs/assets/posters/gate/gate_01.jpg" alt="Gate traversal video" width="100%">
-      </a>
+    <td align="center" valign="top" width="50%">
+      <img src="docs/assets/posters/gate/gate_01.jpg" alt="Gate traversal video" width="100%">
+      <br>
+      <a href="docs/assets/videos/gate/gate_01.mp4">Video Link</a>
       <br>
       <strong>Experiment Video</strong>
     </td>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <img src="docs/assets/images/gate/gate_01.jpg" alt="Gate traversal comparison" width="100%">
       <br>
       <strong>Tracking Comparison</strong>
@@ -140,14 +140,14 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 
 <table>
   <tr>
-    <td align="center" width="50%">
-      <a href="docs/assets/videos/writing/writing_01.mp4">
-        <img src="docs/assets/posters/writing/writing_01.jpg" alt="Aerial writing video" width="100%">
-      </a>
+    <td align="center" valign="top" width="50%">
+      <img src="docs/assets/posters/writing/writing_01.jpg" alt="Aerial writing video" width="100%">
+      <br>
+      <a href="docs/assets/videos/writing/writing_01.mp4">Video Link</a>
       <br>
       <strong>Featured Writing Demonstration</strong>
     </td>
-    <td align="center" width="50%">
+    <td align="center" valign="top" width="50%">
       <img src="docs/assets/images/writing/writing_01.jpg" alt="Aerial writing result snapshot" width="100%">
       <br>
       <strong>Result Snapshot</strong>
@@ -157,17 +157,17 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 
 <table>
   <tr>
-    <td align="center" width="50%">
-      <a href="docs/assets/videos/writing/writing_02.mp4">
-        <img src="docs/assets/posters/writing/writing_02.jpg" alt="Writing without rotor failure" width="100%">
-      </a>
+    <td align="center" valign="top" width="50%">
+      <img src="docs/assets/posters/writing/writing_02.jpg" alt="Writing without rotor failure" width="100%">
+      <br>
+      <a href="docs/assets/videos/writing/writing_02.mp4">Video Link</a>
       <br>
       <strong>Without Rotor Failure</strong>
     </td>
-    <td align="center" width="50%">
-      <a href="docs/assets/videos/writing/writing_03.mp4">
-        <img src="docs/assets/posters/writing/writing_03.jpg" alt="Writing with rotor failure" width="100%">
-      </a>
+    <td align="center" valign="top" width="50%">
+      <img src="docs/assets/posters/writing/writing_03.jpg" alt="Writing with rotor failure" width="100%">
+      <br>
+      <a href="docs/assets/videos/writing/writing_03.mp4">Video Link</a>
       <br>
       <strong>With Rotor Failure</strong>
     </td>
@@ -184,25 +184,25 @@ Representative case images are reused for symmetric failure sets that share the 
 
 | Failure case | Reference | BTO-CL | BTO-AL | UTO-CL | UTO-AL |
 | --- | --- | --- | --- | --- | --- |
-| `1 / 4 / 5` | <img src="docs/assets/images/hover/cases/1.jpg" alt="Failure rotor 1, 4, or 5" width="120"> | [Success](docs/assets/videos/hover/0deg/BTO-CL/1.mp4) | [Success](docs/assets/videos/hover/0deg/BTO-AL/1.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-CL/1.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-AL/1.mp4) |
-| `12 / 34` | <img src="docs/assets/images/hover/cases/12.jpg" alt="Failure rotor 12 or 34" width="120"> | [Success](docs/assets/videos/hover/0deg/BTO-CL/12.mp4) | [Success](docs/assets/videos/hover/0deg/BTO-AL/12.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-CL/12.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-AL/12.mp4) |
-| `13 / 16 / 36` | <img src="docs/assets/images/hover/cases/13.jpg" alt="Failure rotor 13, 16, or 36" width="120"> | [Failure](docs/assets/videos/hover/0deg/BTO-CL/13.mp4) | [Success](docs/assets/videos/hover/0deg/BTO-AL/13.mp4) | [Failure](docs/assets/videos/hover/0deg/UTO-CL/13.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-AL/13.mp4) |
-| `136` | <img src="docs/assets/images/hover/cases/136.jpg" alt="Failure rotor 136" width="120"> | [Failure](docs/assets/videos/hover/0deg/BTO-CL/136.mp4) | [Success](docs/assets/videos/hover/0deg/BTO-AL/136.mp4) | [Failure](docs/assets/videos/hover/0deg/UTO-CL/136.mp4) | [Success](docs/assets/videos/hover/0deg/UTO-AL/136.mp4) |
+| `1 / 4 / 5` | <img src="docs/assets/images/hover/cases/1.jpg" alt="Failure rotor 1, 4, or 5" width="120"> | <img src="docs/assets/posters/hover/0deg/BTO-CL/1.jpg" alt="0 deg BTO-CL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-CL/1.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/BTO-AL/1.jpg" alt="0 deg BTO-AL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-AL/1.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/UTO-CL/1.jpg" alt="0 deg UTO-CL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-CL/1.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/UTO-AL/1.jpg" alt="0 deg UTO-AL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-AL/1.mp4">Video Link</a><br><sub>Success</sub> |
+| `12 / 34` | <img src="docs/assets/images/hover/cases/12.jpg" alt="Failure rotor 12 or 34" width="120"> | <img src="docs/assets/posters/hover/0deg/BTO-CL/12.jpg" alt="0 deg BTO-CL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-CL/12.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/BTO-AL/12.jpg" alt="0 deg BTO-AL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-AL/12.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/UTO-CL/12.jpg" alt="0 deg UTO-CL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-CL/12.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/UTO-AL/12.jpg" alt="0 deg UTO-AL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-AL/12.mp4">Video Link</a><br><sub>Success</sub> |
+| `13 / 16 / 36` | <img src="docs/assets/images/hover/cases/13.jpg" alt="Failure rotor 13, 16, or 36" width="120"> | <img src="docs/assets/posters/hover/0deg/BTO-CL/13.jpg" alt="0 deg BTO-CL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-CL/13.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/0deg/BTO-AL/13.jpg" alt="0 deg BTO-AL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-AL/13.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/UTO-CL/13.jpg" alt="0 deg UTO-CL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-CL/13.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/0deg/UTO-AL/13.jpg" alt="0 deg UTO-AL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-AL/13.mp4">Video Link</a><br><sub>Success</sub> |
+| `136` | <img src="docs/assets/images/hover/cases/136.jpg" alt="Failure rotor 136" width="120"> | <img src="docs/assets/posters/hover/0deg/BTO-CL/136.jpg" alt="0 deg BTO-CL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-CL/136.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/0deg/BTO-AL/136.jpg" alt="0 deg BTO-AL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/BTO-AL/136.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/0deg/UTO-CL/136.jpg" alt="0 deg UTO-CL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-CL/136.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/0deg/UTO-AL/136.jpg" alt="0 deg UTO-AL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/0deg/UTO-AL/136.mp4">Video Link</a><br><sub>Success</sub> |
 
 ### 45 deg hovering comparison
 
 | Failure case | Reference | BTO-CL | BTO-AL | UTO-CL | UTO-AL |
 | --- | --- | --- | --- | --- | --- |
-| `1` | <img src="docs/assets/images/hover/cases/1.jpg" alt="Failure rotor 1" width="120"> | [Success](docs/assets/videos/hover/45deg/BTO-CL/1.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/1.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/1.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-AL/1.mp4) |
-| `4` | <img src="docs/assets/images/hover/cases/4.jpg" alt="Failure rotor 4" width="120"> | [Success](docs/assets/videos/hover/45deg/BTO-CL/4.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/4.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/4.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-AL/4.mp4) |
-| `5` | <img src="docs/assets/images/hover/cases/5.jpg" alt="Failure rotor 5" width="120"> | [Success](docs/assets/videos/hover/45deg/BTO-CL/5.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/5.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-CL/5.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-AL/5.mp4) |
-| `12` | <img src="docs/assets/images/hover/cases/12.jpg" alt="Failure rotor 12" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/12.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/12.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/12.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-AL/12.mp4) |
-| `34` | <img src="docs/assets/images/hover/cases/34.jpg" alt="Failure rotor 34" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/34.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/34.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/34.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-AL/34.mp4) |
-| `13` | <img src="docs/assets/images/hover/cases/13.jpg" alt="Failure rotor 13" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/13.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/13.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/13.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-AL/13.mp4) |
-| `16` | <img src="docs/assets/images/hover/cases/16.jpg" alt="Failure rotor 16" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/16.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/16.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/16.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-AL/16.mp4) |
-| `36` | <img src="docs/assets/images/hover/cases/36.jpg" alt="Failure rotor 36" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/36.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/36.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/36.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-AL/36.mp4) |
-| `136` | <img src="docs/assets/images/hover/cases/136.jpg" alt="Failure rotor 136" width="120"> | [Failure](docs/assets/videos/hover/45deg/BTO-CL/136.mp4) | [Success](docs/assets/videos/hover/45deg/BTO-AL/136.mp4) | [Failure](docs/assets/videos/hover/45deg/UTO-CL/136.mp4) | [Success](docs/assets/videos/hover/45deg/UTO-AL/136.mp4) |
+| `1` | <img src="docs/assets/images/hover/cases/1.jpg" alt="Failure rotor 1" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/1.jpg" alt="45 deg BTO-CL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/1.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/1.jpg" alt="45 deg BTO-AL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/1.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/1.jpg" alt="45 deg UTO-CL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/1.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/1.jpg" alt="45 deg UTO-AL case 1 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/1.mp4">Video Link</a><br><sub>Failure</sub> |
+| `4` | <img src="docs/assets/images/hover/cases/4.jpg" alt="Failure rotor 4" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/4.jpg" alt="45 deg BTO-CL case 4 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/4.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/4.jpg" alt="45 deg BTO-AL case 4 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/4.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/4.jpg" alt="45 deg UTO-CL case 4 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/4.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/4.jpg" alt="45 deg UTO-AL case 4 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/4.mp4">Video Link</a><br><sub>Success</sub> |
+| `5` | <img src="docs/assets/images/hover/cases/5.jpg" alt="Failure rotor 5" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/5.jpg" alt="45 deg BTO-CL case 5 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/5.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/5.jpg" alt="45 deg BTO-AL case 5 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/5.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/5.jpg" alt="45 deg UTO-CL case 5 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/5.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/5.jpg" alt="45 deg UTO-AL case 5 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/5.mp4">Video Link</a><br><sub>Success</sub> |
+| `12` | <img src="docs/assets/images/hover/cases/12.jpg" alt="Failure rotor 12" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/12.jpg" alt="45 deg BTO-CL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/12.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/12.jpg" alt="45 deg BTO-AL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/12.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/12.jpg" alt="45 deg UTO-CL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/12.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/12.jpg" alt="45 deg UTO-AL case 12 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/12.mp4">Video Link</a><br><sub>Failure</sub> |
+| `34` | <img src="docs/assets/images/hover/cases/34.jpg" alt="Failure rotor 34" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/34.jpg" alt="45 deg BTO-CL case 34 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/34.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/34.jpg" alt="45 deg BTO-AL case 34 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/34.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/34.jpg" alt="45 deg UTO-CL case 34 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/34.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/34.jpg" alt="45 deg UTO-AL case 34 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/34.mp4">Video Link</a><br><sub>Success</sub> |
+| `13` | <img src="docs/assets/images/hover/cases/13.jpg" alt="Failure rotor 13" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/13.jpg" alt="45 deg BTO-CL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/13.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/13.jpg" alt="45 deg BTO-AL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/13.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/13.jpg" alt="45 deg UTO-CL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/13.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/13.jpg" alt="45 deg UTO-AL case 13 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/13.mp4">Video Link</a><br><sub>Failure</sub> |
+| `16` | <img src="docs/assets/images/hover/cases/16.jpg" alt="Failure rotor 16" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/16.jpg" alt="45 deg BTO-CL case 16 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/16.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/16.jpg" alt="45 deg BTO-AL case 16 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/16.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/16.jpg" alt="45 deg UTO-CL case 16 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/16.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/16.jpg" alt="45 deg UTO-AL case 16 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/16.mp4">Video Link</a><br><sub>Success</sub> |
+| `36` | <img src="docs/assets/images/hover/cases/36.jpg" alt="Failure rotor 36" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/36.jpg" alt="45 deg BTO-CL case 36 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/36.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/36.jpg" alt="45 deg BTO-AL case 36 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/36.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/36.jpg" alt="45 deg UTO-CL case 36 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/36.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/36.jpg" alt="45 deg UTO-AL case 36 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/36.mp4">Video Link</a><br><sub>Failure</sub> |
+| `136` | <img src="docs/assets/images/hover/cases/136.jpg" alt="Failure rotor 136" width="120"> | <img src="docs/assets/posters/hover/45deg/BTO-CL/136.jpg" alt="45 deg BTO-CL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-CL/136.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/BTO-AL/136.jpg" alt="45 deg BTO-AL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/BTO-AL/136.mp4">Video Link</a><br><sub>Success</sub> | <img src="docs/assets/posters/hover/45deg/UTO-CL/136.jpg" alt="45 deg UTO-CL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-CL/136.mp4">Video Link</a><br><sub>Failure</sub> | <img src="docs/assets/posters/hover/45deg/UTO-AL/136.jpg" alt="45 deg UTO-AL case 136 poster" width="140"><br><a href="docs/assets/videos/hover/45deg/UTO-AL/136.mp4">Video Link</a><br><sub>Success</sub> |
 
 ## Notes
 
-- GitHub README files cannot preserve the full CSS and JavaScript behavior of the original page, so videos are presented here as clickable posters and compact tables.
+- GitHub README files cannot preserve the full CSS and JavaScript behavior of the original page, so videos are presented here as poster images with direct links and compact tables.
