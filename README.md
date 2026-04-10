@@ -33,6 +33,23 @@ Conventional multirotors suffer from a rapid collapse of attainable wrench space
 
 ## Main Video
 
+The embedded preview below is a low-resolution version for quick viewing in the README. Readers can download the high-resolution version from the link provided below the preview.
+
+<p align="center">
+  <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_overview_1080p.jpg" width="720">
+    <source src="docs/assets/videos/main/main_overview_preview_360p.mp4" type="video/mp4">
+    Your viewer does not support embedded video. Please use the download links below.
+  </video>
+</p>
+
+<p align="center">
+  Low-resolution preview:
+  <a href="docs/assets/videos/main/main_overview_preview_360p.mp4">Preview Video (360p)</a>
+  <br>
+  High-resolution download:
+  <a href="docs/assets/videos/main/main_overview_1080p.mp4">Main Video - Overview (1080p)</a>
+</p>
+
 Each video slot below shows the corresponding poster image, with a direct MP4 link placed underneath.
 
 <table>
