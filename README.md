@@ -33,7 +33,7 @@ Conventional multirotors suffer from a rapid collapse of attainable wrench space
 
 ## Main Video
 
-All embedded videos below are low-resolution previews for quick viewing in the README. Readers can download the high-resolution versions from the links provided beneath each preview.
+All embedded videos below are low-resolution previews for quick viewing in the README. Readers can download the high-resolution versions from the links provided beneath each preview. Preview media in this README use fixed display widths for more consistent viewing across different screen sizes.
 
 <table>
   <tr>
@@ -105,7 +105,7 @@ Indoor trajectory tracking under 5 m/s wind disturbance is used to evaluate post
       <strong>Experiment Video</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking statistics" width="100%">
+      <img src="docs/assets/images/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking statistics" width="480">
       <br>
       <strong>Tracking Error Statistics</strong>
     </td>
@@ -131,7 +131,7 @@ Outdoor trajectory tracking is evaluated in low-temperature conditions with stoc
       <strong>Experiment Video</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking statistics" width="100%">
+      <img src="docs/assets/images/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking statistics" width="480">
       <br>
       <strong>Tracking Error Statistics</strong>
     </td>
@@ -157,7 +157,7 @@ In the tilted narrow-frame traversal task, the vehicle passes through the apertu
       <strong>Experiment Video</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/gate/gate_01.jpg" alt="Gate traversal comparison" width="100%">
+      <img src="docs/assets/images/gate/gate_01.jpg" alt="Gate traversal comparison" width="480">
       <br>
       <strong>Tracking Comparison</strong>
     </td>
@@ -183,7 +183,7 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
       <strong>Featured Writing Demonstration</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/writing/writing_01.jpg" alt="Aerial writing result snapshot" width="100%">
+      <img src="docs/assets/images/writing/writing_01.jpg" alt="Aerial writing result snapshot" width="480">
       <br>
       <strong>Result Snapshot</strong>
     </td>
