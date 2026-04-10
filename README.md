@@ -33,49 +33,47 @@ Conventional multirotors suffer from a rapid collapse of attainable wrench space
 
 ## Main Video
 
-The embedded preview below is a low-resolution version for quick viewing in the README. Readers can download the high-resolution version from the link provided below the preview.
-
-<p align="center">
-  <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_overview_1080p.jpg" width="720">
-    <source src="docs/assets/videos/main/main_overview_preview_360p.mp4" type="video/mp4">
-    Your viewer does not support embedded video. Please use the download links below.
-  </video>
-</p>
-
-<p align="center">
-  Low-resolution preview:
-  <a href="docs/assets/videos/main/main_overview_preview_360p.mp4">Preview Video (360p)</a>
-  <br>
-  High-resolution download:
-  <a href="docs/assets/videos/main/main_overview_1080p.mp4">Main Video - Overview (1080p)</a>
-</p>
-
-Each video slot below shows the corresponding poster image, with a direct MP4 link placed underneath.
+All embedded videos below are low-resolution previews for quick viewing in the README. Readers can download the high-resolution versions from the links provided beneath each preview.
 
 <table>
   <tr>
     <td align="center" valign="top" width="33.33%">
-      <img src="docs/assets/posters/main/main_overview_1080p.jpg" alt="Main video overview" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_overview_1080p.jpg" width="320">
+        <source src="docs/assets/videos/main/main_overview_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/main/main_overview_1080p.mp4">Video Link</a>
+      <a href="docs/assets/videos/main/main_overview_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/main/main_overview_1080p.mp4">High-resolution download</a>
       <br>
       <strong>Main Video - Overview</strong>
       <br>
       Problem setting, key challenges, and main technical contributions.
     </td>
     <td align="center" valign="top" width="33.33%">
-      <img src="docs/assets/posters/main/main_part_1_720p.jpg" alt="Main video part I" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_part_1_720p.jpg" width="320">
+        <source src="docs/assets/videos/main/main_part_1_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/main/main_part_1_720p.mp4">Video Link</a>
+      <a href="docs/assets/videos/main/main_part_1_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/main/main_part_1_720p.mp4">High-resolution download</a>
       <br>
       <strong>Main Video - Part I</strong>
       <br>
       Hovering and trajectory-tracking experiments under single and multiple rotor failures.
     </td>
     <td align="center" valign="top" width="33.33%">
-      <img src="docs/assets/posters/main/main_part_2_720p.jpg" alt="Main video part II" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_part_2_720p.jpg" width="320">
+        <source src="docs/assets/videos/main/main_part_2_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/main/main_part_2_720p.mp4">Video Link</a>
+      <a href="docs/assets/videos/main/main_part_2_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/main/main_part_2_720p.mp4">High-resolution download</a>
       <br>
       <strong>Main Video - Part II</strong>
       <br>
@@ -95,9 +93,14 @@ Indoor trajectory tracking under 5 m/s wind disturbance is used to evaluate post
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking video" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/trajectory/trajectory_01.jpg" width="480">
+        <source src="docs/assets/videos/trajectory/trajectory_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/trajectory/trajectory_01.mp4">Video Link</a>
+      <a href="docs/assets/videos/trajectory/trajectory_01_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/trajectory/trajectory_01.mp4">High-resolution download</a>
       <br>
       <strong>Experiment Video</strong>
     </td>
@@ -116,9 +119,14 @@ Outdoor trajectory tracking is evaluated in low-temperature conditions with stoc
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking video" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/outdoor/outdoor_01.jpg" width="480">
+        <source src="docs/assets/videos/outdoor/outdoor_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/outdoor/outdoor_01.mp4">Video Link</a>
+      <a href="docs/assets/videos/outdoor/outdoor_01_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/outdoor/outdoor_01.mp4">High-resolution download</a>
       <br>
       <strong>Experiment Video</strong>
     </td>
@@ -137,9 +145,14 @@ In the tilted narrow-frame traversal task, the vehicle passes through the apertu
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/gate/gate_01.jpg" alt="Gate traversal video" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/gate/gate_01.jpg" width="480">
+        <source src="docs/assets/videos/gate/gate_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/gate/gate_01.mp4">Video Link</a>
+      <a href="docs/assets/videos/gate/gate_01_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/gate/gate_01.mp4">High-resolution download</a>
       <br>
       <strong>Experiment Video</strong>
     </td>
@@ -158,9 +171,14 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/writing/writing_01.jpg" alt="Aerial writing video" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_01.jpg" width="480">
+        <source src="docs/assets/videos/writing/writing_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/writing/writing_01.mp4">Video Link</a>
+      <a href="docs/assets/videos/writing/writing_01_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/writing/writing_01.mp4">High-resolution download</a>
       <br>
       <strong>Featured Writing Demonstration</strong>
     </td>
@@ -175,16 +193,26 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/writing/writing_02.jpg" alt="Writing without rotor failure" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_02.jpg" width="480">
+        <source src="docs/assets/videos/writing/writing_02_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/writing/writing_02.mp4">Video Link</a>
+      <a href="docs/assets/videos/writing/writing_02_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/writing/writing_02.mp4">High-resolution download</a>
       <br>
       <strong>Without Rotor Failure</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/writing/writing_03.jpg" alt="Writing with rotor failure" width="100%">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_03.jpg" width="480">
+        <source src="docs/assets/videos/writing/writing_03_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
-      <a href="docs/assets/videos/writing/writing_03.mp4">Video Link</a>
+      <a href="docs/assets/videos/writing/writing_03_preview_360p.mp4">Preview Video (360p)</a>
+      <br>
+      <a href="docs/assets/videos/writing/writing_03.mp4">High-resolution download</a>
       <br>
       <strong>With Rotor Failure</strong>
     </td>
@@ -222,4 +250,4 @@ Representative case images are reused for symmetric failure sets that share the 
 
 ## Notes
 
-- README rendering cannot preserve the full CSS and JavaScript behavior of the original page, so videos are presented here as poster images with direct links and compact tables.
+- README rendering cannot preserve the full CSS and JavaScript behavior of the original page, so non-hover videos are presented here as low-resolution embedded previews with download links, while hover results remain compact poster-and-link tables.
