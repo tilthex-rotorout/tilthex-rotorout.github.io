@@ -5,8 +5,6 @@
 </p>
 
 <p align="center">
-  <a href="#main-video"><strong>Main Video</strong></a>
-  |
   <a href="#experiment-highlights"><strong>Experiment Highlights</strong></a>
   |
   <a href="#extended-hovering-results"><strong>Extended Hovering Results</strong></a>
@@ -30,57 +28,6 @@ Conventional multirotors suffer from a rapid collapse of attainable wrench space
 - The paper introduces an AWS feasibility metric that accounts for transient wrench jumps under abrupt rotor failures.
 - Two passive fault-tolerant strategies are developed: one at the controller layer and one at the allocation layer.
 - Flight experiments validate hovering, trajectory tracking, gate traversal, and contact-rich aerial writing under single and multiple rotor failures.
-
-## Main Video
-
-All embedded videos below are low-resolution previews for quick viewing in the README. Readers can download the high-resolution versions from the links provided beneath each preview. Preview media in this README use fixed display widths for more consistent viewing across different screen sizes.
-
-<table>
-  <tr>
-    <td align="center" valign="top" width="33.33%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_overview_1080p.jpg" width="320">
-        <source src="docs/assets/videos/main/main_overview_preview_360p.mp4" type="video/mp4">
-        Your viewer does not support embedded video. Please use the download links below.
-      </video>
-      <br>
-      <a href="docs/assets/videos/main/main_overview_preview_360p.mp4">Preview Video (360p)</a>
-      <br>
-      <a href="docs/assets/videos/main/main_overview_1080p.mp4">High-resolution download</a>
-      <br>
-      <strong>Main Video - Overview</strong>
-      <br>
-      Problem setting, key challenges, and main technical contributions.
-    </td>
-    <td align="center" valign="top" width="33.33%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_part_1_720p.jpg" width="320">
-        <source src="docs/assets/videos/main/main_part_1_preview_360p.mp4" type="video/mp4">
-        Your viewer does not support embedded video. Please use the download links below.
-      </video>
-      <br>
-      <a href="docs/assets/videos/main/main_part_1_preview_360p.mp4">Preview Video (360p)</a>
-      <br>
-      <a href="docs/assets/videos/main/main_part_1_720p.mp4">High-resolution download</a>
-      <br>
-      <strong>Main Video - Part I</strong>
-      <br>
-      Hovering and trajectory-tracking experiments under single and multiple rotor failures.
-    </td>
-    <td align="center" valign="top" width="33.33%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/main/main_part_2_720p.jpg" width="320">
-        <source src="docs/assets/videos/main/main_part_2_preview_360p.mp4" type="video/mp4">
-        Your viewer does not support embedded video. Please use the download links below.
-      </video>
-      <br>
-      <a href="docs/assets/videos/main/main_part_2_preview_360p.mp4">Preview Video (360p)</a>
-      <br>
-      <a href="docs/assets/videos/main/main_part_2_720p.mp4">High-resolution download</a>
-      <br>
-      <strong>Main Video - Part II</strong>
-      <br>
-      Narrow-frame traversal and contact-based aerial writing under rotor-failure conditions.
-    </td>
-  </tr>
-</table>
 
 ## Experiment Highlights
 
@@ -250,4 +197,4 @@ Representative case images are reused for symmetric failure sets that share the 
 
 ## Notes
 
-- README rendering cannot preserve the full CSS and JavaScript behavior of the original page, so the main video, experiment-highlight videos, and hover results all use low-resolution embedded previews. Hover results additionally retain the statistics posters below each preview, and all sections keep HD download links.
+- README rendering cannot preserve the full CSS and JavaScript behavior of the original page, so the experiment-highlight videos and hover results use low-resolution embedded previews. Hover results additionally retain the statistics posters below each preview, and all sections keep HD download links.
