@@ -93,7 +93,10 @@ Indoor trajectory tracking under 5 m/s wind disturbance is used to evaluate post
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking poster" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/trajectory/trajectory_01.jpg" width="480">
+        <source src="docs/assets/videos/trajectory/trajectory_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
       <a href="docs/assets/videos/trajectory/trajectory_01_preview_360p.mp4">Preview Video (360p)</a>
       <br>
@@ -116,7 +119,10 @@ Outdoor trajectory tracking is evaluated in low-temperature conditions with stoc
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking poster" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/outdoor/outdoor_01.jpg" width="480">
+        <source src="docs/assets/videos/outdoor/outdoor_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
       <a href="docs/assets/videos/outdoor/outdoor_01_preview_360p.mp4">Preview Video (360p)</a>
       <br>
@@ -139,7 +145,10 @@ In the tilted narrow-frame traversal task, the vehicle passes through the apertu
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/gate/gate_01.jpg" alt="Gate traversal poster" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/gate/gate_01.jpg" width="480">
+        <source src="docs/assets/videos/gate/gate_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
       <a href="docs/assets/videos/gate/gate_01_preview_360p.mp4">Preview Video (360p)</a>
       <br>
@@ -162,7 +171,10 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/writing/writing_01.jpg" alt="Aerial writing poster" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_01.jpg" width="480">
+        <source src="docs/assets/videos/writing/writing_01_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
       <a href="docs/assets/videos/writing/writing_01_preview_360p.mp4">Preview Video (360p)</a>
       <br>
@@ -181,7 +193,10 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/writing/writing_02.jpg" alt="Writing without rotor failure poster" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_02.jpg" width="480">
+        <source src="docs/assets/videos/writing/writing_02_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
       <a href="docs/assets/videos/writing/writing_02_preview_360p.mp4">Preview Video (360p)</a>
       <br>
@@ -190,7 +205,10 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
       <strong>Without Rotor Failure</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/posters/writing/writing_03.jpg" alt="Writing with rotor failure poster" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_03.jpg" width="480">
+        <source src="docs/assets/videos/writing/writing_03_preview_360p.mp4" type="video/mp4">
+        Your viewer does not support embedded video. Please use the download links below.
+      </video>
       <br>
       <a href="docs/assets/videos/writing/writing_03_preview_360p.mp4">Preview Video (360p)</a>
       <br>
@@ -232,4 +250,4 @@ Representative case images are reused for symmetric failure sets that share the 
 
 ## Notes
 
-- README rendering cannot preserve the full CSS and JavaScript behavior of the original page, so the main video remains as a low-resolution embedded preview, other experiment videos are shown as poster images with download links, and hover results use low-resolution embedded previews with statistics posters and HD download links.
+- README rendering cannot preserve the full CSS and JavaScript behavior of the original page, so the main video, experiment-highlight videos, and hover results all use low-resolution embedded previews. Hover results additionally retain the statistics posters below each preview, and all sections keep HD download links.
