@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="docs/assets/posters/overview_readme_2400.jpg" alt="Overview figure" width="1200">
+  <img src="docs/assets/posters/overview_readme_2400.jpg" alt="Overview figure" width="1800">
 </p>
 
 <p align="center">
@@ -40,7 +40,7 @@ Indoor trajectory tracking under 5 m/s wind disturbance is used to evaluate post
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/trajectory/trajectory_01.jpg" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/trajectory/trajectory_01.jpg" width="720">
         <source src="docs/assets/videos/trajectory/trajectory_01_preview_360p.mp4" type="video/mp4">
         Your viewer does not support embedded video.
       </video>
@@ -48,7 +48,7 @@ Indoor trajectory tracking under 5 m/s wind disturbance is used to evaluate post
       <strong>Experiment Video</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking statistics" width="480">
+      <img src="docs/assets/images/trajectory/trajectory_01.jpg" alt="Indoor trajectory tracking statistics" width="720">
       <br>
       <strong>Tracking Error Statistics</strong>
     </td>
@@ -62,7 +62,7 @@ Outdoor trajectory tracking is evaluated in low-temperature conditions with stoc
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/outdoor/outdoor_01.jpg" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/outdoor/outdoor_01.jpg" width="720">
         <source src="docs/assets/videos/outdoor/outdoor_01_preview_360p.mp4" type="video/mp4">
         Your viewer does not support embedded video.
       </video>
@@ -70,7 +70,7 @@ Outdoor trajectory tracking is evaluated in low-temperature conditions with stoc
       <strong>Experiment Video</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking statistics" width="480">
+      <img src="docs/assets/images/outdoor/outdoor_01.jpg" alt="Outdoor trajectory tracking statistics" width="720">
       <br>
       <strong>Tracking Error Statistics</strong>
     </td>
@@ -84,7 +84,7 @@ In the tilted narrow-frame traversal task, the vehicle passes through the apertu
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/gate/gate_01.jpg" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/gate/gate_01.jpg" width="720">
         <source src="docs/assets/videos/gate/gate_01_preview_360p.mp4" type="video/mp4">
         Your viewer does not support embedded video.
       </video>
@@ -92,7 +92,7 @@ In the tilted narrow-frame traversal task, the vehicle passes through the apertu
       <strong>Experiment Video</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/gate/gate_01.jpg" alt="Gate traversal comparison" width="480">
+      <img src="docs/assets/images/gate/gate_01.jpg" alt="Gate traversal comparison" width="720">
       <br>
       <strong>Tracking Comparison</strong>
     </td>
@@ -106,7 +106,7 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_01.jpg" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_01.jpg" width="720">
         <source src="docs/assets/videos/writing/writing_01_preview_360p.mp4" type="video/mp4">
         Your viewer does not support embedded video.
       </video>
@@ -114,7 +114,7 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
       <strong>Featured Writing Demonstration</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <img src="docs/assets/images/writing/writing_01.jpg" alt="Aerial writing result snapshot" width="480">
+      <img src="docs/assets/images/writing/writing_01.jpg" alt="Aerial writing result snapshot" width="720">
       <br>
       <strong>Result Snapshot</strong>
     </td>
@@ -124,7 +124,7 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
 <table>
   <tr>
     <td align="center" valign="top" width="50%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_02.jpg" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_02.jpg" width="720">
         <source src="docs/assets/videos/writing/writing_02_preview_360p.mp4" type="video/mp4">
         Your viewer does not support embedded video.
       </video>
@@ -132,7 +132,7 @@ Aerial writing is a representative contact-rich aerial-operation task that requi
       <strong>Without Rotor Failure</strong>
     </td>
     <td align="center" valign="top" width="50%">
-      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_03.jpg" width="480">
+      <video controls preload="metadata" playsinline poster="docs/assets/posters/writing/writing_03.jpg" width="720">
         <source src="docs/assets/videos/writing/writing_03_preview_360p.mp4" type="video/mp4">
         Your viewer does not support embedded video.
       </video>
